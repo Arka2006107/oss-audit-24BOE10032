@@ -1,0 +1,29 @@
+#!/bin/bash
+# Script 1: System Identity Report
+# Author: Arka Das
+# Registration No: 24BOE10032
+# Course: Open Source Software
+
+STUDENT_NAME="Arka Das"
+REG_NO="24BOE10032"
+SOFTWARE_CHOICE="Python"
+
+KERNEL=$(uname -r)
+USER_NAME=$(whoami)
+UPTIME=$(uptime -p)
+DATE=$(date)
+DISTRO=$(lsb_release -d | cut -f2)
+
+echo "========================================"
+echo "   Open Source Audit — $STUDENT_NAME"
+echo "   Registration No — $REG_NO"
+echo "========================================"
+echo "Software Choice : $SOFTWARE_CHOICE"
+echo "Linux Distro    : $DISTRO"
+echo "Kernel Version  : $KERNEL"
+echo "Current User    : $USER_NAME"
+echo "System Uptime   : $UPTIME"
+echo "Current Date    : $DATE"
+echo ""
+echo "Linux OS is covered under GNU General Public License (GPL)"
+echo "========================================"
